@@ -1,7 +1,7 @@
 const std = @import("std");
 
 const input: f32 = 0.2;
-const expected: f32 = 15;
+const expected: f32 = 0.7;
 var weight: f32 = 4;
 var bias: f32 = 4;
 const learning_rate: f32 = 0.1;
