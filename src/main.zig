@@ -9,6 +9,7 @@ const learning_rate: f32 = 0.1;
 pub fn main() !void {
     const start_time = std.time.microTimestamp();
     var epoch: usize = 0;
+    std.debug.print("Ezpected Result: {}\n", .{expected});
     while (epoch < 10000) : (epoch += 1) {
         const result = activation(weight, bias, input);
         const eror = expected - result;
